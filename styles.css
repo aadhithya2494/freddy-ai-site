@@ -1,0 +1,137 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Flex layout to push footer to bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #00a886;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00a886;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Body Content */
+main {
+    padding: 40px 10%;
+    flex: 1; /* pushes footer to bottom */
+}
+
+h3 {
+    color: #00a886;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Comparison Section */
+.comparison {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.column h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #00a886;
+}
+
+.logo-space {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Bottom Banner */
+.bottom-banner {
+    background-color: #00a886;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.bottom-banner a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #00a886;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.bottom-banner a:hover {
+    background-color: #e3e3e3;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: auto; /* ensures footer stays at bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .comparison {
+        flex-direction: column;
+    }
+}
