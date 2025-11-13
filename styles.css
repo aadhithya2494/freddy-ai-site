@@ -1,3 +1,40 @@
+.separator-content {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+/* ====== SECTION SEPARATOR ====== */
+.section-separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #002C5F;
+  padding: 8px 24px;
+  margin: 32px 0 16px 0;
+  border-radius: 8px;
+}
+.separator-logo img {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+/* ====== COLUMN RIBBON ====== */
+.column-ribbon {
+  background: #002C5F;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: -8px;
+  position: relative;
+  z-index: 1;
+}
 /* ====== BASE ====== */
 html, body {
   margin: 0;
@@ -57,6 +94,7 @@ main {
   font-weight: 600;
   margin-bottom: 40px;
 }
+
 
 /* ====== CAROUSEL ====== */
 .carousel-container {
@@ -137,7 +175,7 @@ li {
 
 .column {
   flex: 1;
-  border: 1px solid #ddd;
+  border: 2.5px solid #002C5F;
   border-radius: 8px;
   padding: 20px;
 }
